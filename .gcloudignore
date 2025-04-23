@@ -1,0 +1,13 @@
+.git
+.gitignore
+__pycache__/
+*.pyc
+*.pyo
+notebooks/
+*.ipynb
+data/
+models/*
+!models/vgg16_finetuned.keras
+app/static/uploads/*
+.DS_Store
+Thumbs.db
