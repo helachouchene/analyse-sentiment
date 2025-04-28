@@ -1,0 +1,7 @@
+runtime: python39  # Choisissez la version Python que vous utilisez
+instance_class: F2  # Pour les applications avec ML, une instance plus puissante
+
+entrypoint: gunicorn -b :$PORT main:app  # Remplacez main:app par le point d'entrée de votre application
+
+env_variables:
+  PYTHONUNBUFFERED: 1
